@@ -1,7 +1,7 @@
 
 project_files = $(wildcard *.scad)
 
-all: snowflake.png cuts-hairline.svg
+all: snowflake-atom.png cuts-hairline.svg
 
 %.png: %.scad $(project_files)
 	openscad $< --imgsize=1280,1024 --preview -o $@
